@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgb(240, 240, 240);
+    color: black;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: yellow;
+    opacity: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: 0 5px 25px yellow;
+}
+
+.logo:hover{
+    background-color: black;
+    color: yellow;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: black;
+    background-color: yellow;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    background-color: black;
+    color: yellow;
+    transform: scale(1.03);
+    cursor: pointer;
+    text-shadow: 0 5px 25px yellow;
+}
+
+.home{
+    height: 100vh;
+    background: url(/assets/images/bg.png);
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1 span {
+    color: black;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 650;
+    max-width: 220px;
+    text-shadow: 0 5px 20px yellow;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 100%;
+    background: yellow;
+    border: 2px solid yellow;
+    border-radius: 4px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: black;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(224, 224, 224);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.inicard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inicard {
+    background-color: black;
+}
+.card {
+    background: yellow;
+    width: 250px;
+    margin: 30px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+}
+
+.card-image {
+    background-color: rgb(0, 0, 0);
+    height: 250px;
+    margin-bottom: 15px;
+    background-size: cover;
+
+}
+
+.pic-1 {
+    background-image: url(/assets/images/p.png);
+}
+
+.pic-2 {
+    background-image: url(assets/images/p.png);
+}
+
+.pic-3 {
+    background-image: url(assets/images/p.png);
+}
+
+.card h2 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card a {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card:hover {
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+    text-shadow: 0 3px 25px yellow;
+}
+
+.card a:hover {
+    background-color: yellow;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background: yellow;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social_icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li {
+    list-style: none;
+}
+
+footer .social_icon li a {
+    font-size: 2em;
+    color: black;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5;
+}
+
+footer .social_icon li a:hover {
+    transform: translateY(-10px);
+}
+
+footer .patas {
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer .pbawah{
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.about{
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    text-shadow: 0 5px 25px yellow;
+}
+
+.title span {
+    color: black;
+    background-color: yellow;
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
+}
+
+.about-cont {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-img {
+    flex: 1;
+    margin-right: 5px;
+    padding-left: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.about-img img {
+    width: 80%;
+    transition: transform 0.3 ease;
+}
+
+.about-img:hover img {
+    transform: scale(1.1);
+}
+
+.cont {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.cont p{
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.sertcard-text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 75px;
+    margin-bottom: 5px;
+    text-shadow: 0 5px 25px yellow;
+}
+
+.sertcard-text span {
+    color: black;
+    background-color: yellow;
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
+}
+
+.sert {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.sert .sertcard {
+    width: 325px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 25px yellow;
+    margin: 20px;
+}
+
+.sert .sertcard img {
+    width: 100%;
+    height: auto;
+}
+
+.sert .sertcard .sertcard-cont {
+    padding: 16px;
+}
+
+.sert .sertcard .sertcard-cont h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.sert .sertcard .sertcard-cont p {
+    color: black;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-top: 2px;
+}
+
+.sert .sertcard .sertcard-cont .sertcard-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 16px;
+    color: yellow;
+    transition: 0.6s;
+}
+
+.sert .sertcard .sertcard-cont:hover .sertcard-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: yellow;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 16px;
+    color: black;
+}
+
+.porto-text {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.porto-text span {
+    color: black;
+    background-color: yellow;
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
+}
+
+.inicard2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.inicard2 .card2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 450px;
+    height: 300px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 35px 80px yellow;
+    transition: 0.5s;
+}
+
+.inicard2 .card2:hover {
+    height: 400px;
+}
+
+.inicard2 .card2 .card2-img{
+    position: absolute;
+    top: 15px;
+    width: 400px;
+    height: 220px;
+    background: black;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.inicard2 .card2:hover .card2-img{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 7px 25px black;
+}
+
+.inicard2 .card2 .card2-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inicard2 .card2 .card2-content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.inicard2 .card2:hover .card2-content {
+    top: 130px;
+    height: 250px;
+}
+
+.inicard2 .card2 .card2-content h2 {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.inicard2 .card2 .card2-content p {
+    color: black;
+}
+
+.inicard2 .card2 .card2-content .card2-btn {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: black;
+    color: yellow;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.inicard2 .card2 .card2-content .card2-btn:hover {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: yellow;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.mainporto-text {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-shadow: 0 5px 25px yellow;
+}
+
+.mainporto-text span {
+    color: black;
+    background-color: yellow;
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
+}
+
+.inimaincard{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+    padding: 50px 50px;
+}
+
+.inimaincard .maincard{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1000px;
+    height: 300px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 35px 80px yellow;
+    transition: 0.5s;
+}
+
+.inimaincard .maincard:hover {
+    height: 450px;
+}
+
+.inimaincard .maincard .maincard-img{
+    position: absolute;
+    top: 20px;
+    width: 550px;
+    height: 230px;
+    background: black;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.inimaincard .maincard:hover .maincard-img{
+    top: -75px;
+    scale: 0.75;
+    box-shadow: 0 7px 25px black;
+}
+
+.inimaincard .maincard .maincard-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inimaincard .maincard .maincard-content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 50 30px;
+    height: 38px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.inimaincard .maincard:hover .maincard-content {
+    top: 215px;
+    height: 225px;
+}
+
+.inimaincard .maincard .maincard-content h2 {
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.inimaincard .maincard .maincard-content p {
+    color: black;
+}
+
+.inimaincard .maincard .maincard-content .maincard-btn {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 20px;
+    background: black;
+    color: yellow;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.inimaincard .maincard .maincard-content .maincard-btn:hover {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 20px;
+    background: yellow;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+}
